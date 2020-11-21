@@ -1,0 +1,16 @@
+{% extends 'tuition/base.html' %}
+
+{% block content %}
+<h1>This is home page</h1>
+    <hr>
+    <div class="container">
+    {{ object.title }}<br>
+    {{ object.content }}<br>
+    {{ object.class_school }}<br>
+    {{ object.medium }}<br>
+    {{ object.salary }}<br>
+    {{ object.location }}<br>
+    {{ object.available }}<br>
+    </div>
+
+{% endblock %}
