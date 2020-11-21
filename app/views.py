@@ -15,7 +15,6 @@ class PostCreateView(CreateView):
     form_class = PostForm
     template_name = 'tuition/create.html'
     success_url = '/'
-    # redirect('home')
 
 class PostList(ListView):
     model = Post
@@ -29,3 +28,8 @@ class PostUpdate(UpdateView):
     model = Post
     form_class = PostForm
     template_name = 'tuition/update.html'
+
+class PostDelete(DeleteView):
+    model = Post
+    template_name = 'tuition/delete.html'
+    success_url = '/'
